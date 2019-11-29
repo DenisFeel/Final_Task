@@ -1,12 +1,27 @@
 $white: #ffffff
 
-$gray: #e9e9e9
+$gray: #ebebeb
+
+$darkgray: #909090
 
 $shadowcolor: rgba(0, 0, 0, 0.3)
+
+$green: #448b00
+
+$yellow: #d89e24
+
+$blue: #274d97
+
+$pink: #c32056
 
 %flex
 	display: flex
 	align-items: center
+
+%absolute
+	position: absolute
+	top: -20px
+	left: 20px
 
 
 body
@@ -34,7 +49,7 @@ aside
 		li
 			a
 				padding: 20px 28px
-				color: #909090
+				color: $darkgray
 				text-decoration: none
 				@extend %flex
 				align-items: flex-end
@@ -63,7 +78,7 @@ aside
 			a:before
 				background-image: url(../img/support_gray.svg)
 		li:hover
-			background-color: #c32056
+			background-color: $pink
 			box-shadow: 2px 2px 2px 1px $shadowcolor
 			a
 				color: $white
@@ -83,3 +98,61 @@ aside
 			a:before
 				background-image: url(../img/support_gray.svg)
 
+main 
+	width: 83%
+	float: right
+	padding: 35px  38px
+	box-sizing: border-box
+	.title
+		padding: 0
+	.top_box
+		margin-top: 70px
+		@extend %flex
+		justify-content: space-between
+		.top_box_block
+			width: 20%
+			padding: 0 20px
+			position: relative
+			box-shadow: 2px 2px 4px 1px $shadowcolor
+			.image
+				width: 75px
+				height: 75px
+				@extend %flex
+				justify-content: center
+				@extend %absolute
+				box-shadow: 2px 1px 2px 0 $shadowcolor
+			.top_block_title
+				margin-top: 20px
+				text-align: right
+				font-size: 14px
+				color: $darkgray
+			.amount
+				margin-top: 10px
+				font-size: 28px
+				text-align: right
+				border-bottom: 1px solid $gray
+				padding-bottom: 18px
+				margin-bottom: 0
+			.top_block_bottom
+				font-size: 12px
+				color: $darkgray
+				margin: 0
+				padding: 16px 0
+				@extend %flex
+				align-items: flex-end
+				img
+					width: 12px
+					margin-bottom: 2px
+					margin-right: 5px
+		.top_box_block:first-child
+			.image
+				background-color: $green
+		.top_box_block:nth-child(2)
+			.image
+				background-color: $yellow
+		.top_box_block:nth-child(3)
+			.image
+				background-color: $blue
+		.top_box_block:nth-child(4)
+			.image
+				background-color: $pink
