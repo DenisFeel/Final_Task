@@ -6,7 +6,7 @@ aside ul li a, main .top_box, main .top_box .top_box_block .image, main .top_box
   -ms-flex-align: center;
   align-items: center; }
 
-main .top_box .top_box_block .image, main .middle_box .middle_box_block .image, main .bottom_box .bottom_box_block ul, main .bottom_box .bottom_box_block .employees {
+main .top_box .top_box_block .image, main .bottom_box .bottom_box_block ul, main .bottom_box .bottom_box_block .employees {
   position: absolute;
   top: -20px;
   left: 20px; }
@@ -155,7 +155,6 @@ main {
     main .middle_box .middle_box_block {
       width: 28.5%;
       padding: 0 20px;
-      padding-top: 175px;
       position: relative;
       -webkit-box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.3);
       box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.3); }
@@ -163,12 +162,14 @@ main {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
-        right: 20px;
+        margin-top: -20px;
         -webkit-box-shadow: 2px 1px 2px 0 rgba(0, 0, 0, 0.3);
-        box-shadow: 2px 1px 2px 0 rgba(0, 0, 0, 0.3); }
+        box-shadow: 2px 1px 2px 0 rgba(0, 0, 0, 0.3);
+        padding: 20px 0;
+        margin-bottom: 20px; }
         main .middle_box .middle_box_block .image img {
-          width: 85%;
-          height: 175px; }
+          width: 90%;
+          height: auto; }
       main .middle_box .middle_box_block .middle_block_title {
         margin-top: 0;
         margin-bottom: 0;
@@ -192,9 +193,9 @@ main {
         color: #909090;
         margin: 0;
         padding: 16px 0;
-        -webkit-box-align: end;
-        -ms-flex-align: end;
-        align-items: flex-end; }
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start; }
         main .middle_box .middle_box_block .middle_block_bottom img {
           width: 12px;
           margin-bottom: 2px;
@@ -230,7 +231,7 @@ main {
         color: #ffffff;
         margin: 0;
         padding: 15px 20px; }
-        main .bottom_box .bottom_box_block ul span {
+        main .bottom_box .bottom_box_block ul .ul_title {
           padding-right: 10px; }
         main .bottom_box .bottom_box_block ul li {
           margin-left: 10px; }

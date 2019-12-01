@@ -175,18 +175,18 @@ main
 		.middle_box_block
 			width: 28.5%
 			padding: 0 20px
-			padding-top: 175px
 			position: relative
 			box-shadow: 2px 2px 4px 1px $shadowcolor
 			.image
 				@extend %flex
 				justify-content: center
-				@extend %absolute
-				right: 20px
+				margin-top: -20px
 				box-shadow: 2px 1px 2px 0 $shadowcolor
+				padding: 20px 0
+				margin-bottom: 20px
 				img
-					width: 85%
-					height: 175px
+					width: 90%
+					height: auto
 			.middle_block_title
 				margin-top: 0
 				margin-bottom: 0
@@ -211,7 +211,7 @@ main
 				margin: 0
 				padding: 16px 0
 				@extend %flex
-				align-items: flex-end
+				align-items: flex-start
 				img
 					width: 12px
 					margin-bottom: 2px
@@ -248,7 +248,7 @@ main
 				color: $white
 				margin: 0
 				padding: 15px 20px
-				span
+				.ul_title
 					padding-right: 10px
 				li
 					margin-left: 10px
