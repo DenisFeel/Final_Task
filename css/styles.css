@@ -230,7 +230,9 @@ main {
         right: 20px;
         color: #ffffff;
         margin: 0;
-        padding: 15px 20px; }
+        padding: 15px 20px;
+        -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3); }
         main .bottom_box .bottom_box_block ul .ul_title {
           padding-right: 10px; }
         main .bottom_box .bottom_box_block ul li {
@@ -283,7 +285,9 @@ main {
         color: #ffffff;
         margin: 0;
         padding: 15px 20px;
-        background-color: #274d97; }
+        background-color: #274d97;
+        -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3); }
         main .bottom_box .bottom_box_block .employees .bottom_box_header {
           border: none;
           font-size: 18px;
@@ -384,7 +388,8 @@ footer {
         text-decoration: underline; }
     footer .footer_container .made {
       margin: 0;
-      margin-right: 20px; }
+      margin-right: 20px;
+      color: #6d6c78; }
 
 [class$="box_block"] {
   background-color: #ffffff; }

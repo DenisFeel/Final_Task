@@ -140,6 +140,7 @@
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center center;
+		cursor: pointer
 	}
 
 	aside {
@@ -261,6 +262,7 @@
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center center;
+		cursor: pointer
 	}
 
 	aside {
@@ -271,7 +273,7 @@
 	}
 
 	.menu:focus + aside {
-		width: 25%;
+		width: 35%;
 		transform: translateX(150px);
 	}
 
@@ -390,17 +392,18 @@
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center center;
+		cursor: pointer
 	}
 
 	aside {
 		margin-left: -150px;
 		transition-property: all;
-  	transition: all ease 1s;
-  	z-index: 1;
+  		transition: all ease 1s;
+  		z-index: 1;
 	}
 
 	.menu:focus + aside {
-		width: 25%;
+		width: 45%;
 		transform: translateX(150px);
 	}
 
@@ -494,8 +497,11 @@
 		font-size: 14px;
 		border-top: 2px solid #d5d5d5;
 	}
-	footer .footer_container{
+	footer .footer_container {
 		border-top: none;
-		font-size: 10px;
+		font-size: 8px;
+	}
+	footer .footer_container .made {
+		margin-right: 0;
 	}
 }
